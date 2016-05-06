@@ -25,6 +25,10 @@ func addToggleMenu(){
     self.view.addSubview(toggleView)
 }
 
+func darkMenuButtonPressed(){
+    print("I pressed a dark menu button")
+}
+
 ```
 
 (Download the project to see how to use the menu)
