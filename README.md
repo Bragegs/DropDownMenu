@@ -10,7 +10,6 @@ How To Use
 
 You only need the 'MenuToggle.swift', copy that to your project.
 ```Swift
-import UIKit
 
 func addToggleMenu(){
 
