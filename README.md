@@ -1,7 +1,7 @@
 DropDownMenu
 =========
 
-This library provides a very light drop down menu in swift. The buttons used in the example project is downloaded from [icons8](www.icons8.com).
+This library provides a very light drop down menu in swift. The icons used in the example project is downloaded from [icons8](www.icons8.com).
 
 How To Use
 ----------
@@ -15,12 +15,12 @@ func addToggleMenu(){
     var buttons = [UIButton]()
     for _ in 0..<10{
         let button = UIButton()
-        button.setImage(UIImage(named: "SaveMedia"), forState: .Normal)
+        button.setImage(UIImage(named: "menuButton"), forState: .Normal)
         buttons.append(button)
         button.addTarget(self, action: #selector(darkMenuButtonPressed), forControlEvents: .TouchUpInside)
     }
 
-    let toggleView = ToggleMenu(frame: CGRectMake((self.view.bounds.width*0.33)-92,40, 46, 46), toggleImage: UIImage(named: "Toggle")!, menuButtons: buttons)
+    let toggleView = ToggleMenu(frame: CGRectMake((40,40, 46, 46), toggleImage: UIImage(named: "Toggle")!, menuButtons: buttons)
 
     self.view.addSubview(toggleView)
 }
