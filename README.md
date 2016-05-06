@@ -3,6 +3,8 @@ DropDownMenu
 
 This library provides a very light drop down menu in swift. The icons used in the example project is downloaded from [icons8](www.icons8.com).
 
+<p align="center"><img title="Open and close animation" src="https://raw.githubusercontent.com/Bragegs/DropDownMenu/master/ToggleMenu.gif"/></p>
+
 How To Use
 ----------
 
