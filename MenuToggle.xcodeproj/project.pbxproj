@@ -13,6 +13,7 @@
 		21BC50701CDCC40800E85CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21BC506F1CDCC40800E85CB0 /* Assets.xcassets */; };
 		21BC50731CDCC40800E85CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BC50711CDCC40800E85CB0 /* LaunchScreen.storyboard */; };
 		21BC50971CDCC7B700E85CB0 /* MenuToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC50961CDCC7B700E85CB0 /* MenuToggle.swift */; };
+		21BC50991CDCCBFD00E85CB0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 21BC50981CDCCBFD00E85CB0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		21BC50721CDCC40800E85CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21BC50741CDCC40800E85CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21BC50961CDCC7B700E85CB0 /* MenuToggle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuToggle.swift; sourceTree = "<group>"; };
+		21BC50981CDCCBFD00E85CB0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		21BC505C1CDCC40800E85CB0 = {
 			isa = PBXGroup;
 			children = (
+				21BC50981CDCCBFD00E85CB0 /* README.md */,
 				21BC50671CDCC40800E85CB0 /* MenuToggle */,
 				21BC50661CDCC40800E85CB0 /* Products */,
 			);
@@ -140,6 +143,7 @@
 			files = (
 				21BC506B1CDCC40800E85CB0 /* ViewController.swift in Sources */,
 				21BC50691CDCC40800E85CB0 /* AppDelegate.swift in Sources */,
+				21BC50991CDCCBFD00E85CB0 /* README.md in Sources */,
 				21BC50971CDCC7B700E85CB0 /* MenuToggle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
