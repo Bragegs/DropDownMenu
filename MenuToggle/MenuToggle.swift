@@ -9,7 +9,6 @@ import UIKit
 
 class ToggleMenu: UIView {
     
-    /// PRIVATE VARIABLES
     
     /**
      Used to not add the menu buttons multiple times.
@@ -23,8 +22,6 @@ class ToggleMenu: UIView {
      Do not want it to layout multiple times.
      */
     private var hasLayedOutView=false
-    
-    /// PUBLIC VARIABLES
     
     /**
      The main button that toggles the menu.
@@ -67,7 +64,6 @@ class ToggleMenu: UIView {
         super.drawRect(rect)
     }
     
-    /// PUBLIC FUNCTIONS
     
     /**
      Toggles or untoggles the menu. Use this to manually toggle/untoggle the view
@@ -105,7 +101,6 @@ class ToggleMenu: UIView {
         }
     }
     
-    /// PRIVATE FUNCTIONS
     
     /**
      Adds the toggle button and the effect view background. Default is UIBlurEffectStyle.Dark
