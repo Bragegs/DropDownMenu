@@ -3,12 +3,15 @@ DropDownMenu
 
 This library provides a very light drop down menu in swift. The icons used in the example project is downloaded from [icons8](https://icons8.com/).
 
-<p align="center"><img title="Open and close animation" src="https://raw.githubusercontent.com/Bragegs/DropDownMenu/master/ToggleMenu.gif"/></p>
+<p align="center"><img title="ToggleMenu" src="https://raw.githubusercontent.com/Bragegs/DropDownMenu/master/ToggleMenu.gif"/></p>
 
 How To Use
 ----------
 
 You only need the 'MenuToggle.swift', copy that to your project.
+
+### Programatically
+
 ```Swift
 
 func addToggleMenu(){
@@ -31,8 +34,10 @@ func darkMenuButtonPressed(){
 }
 
 ```
+### StoryBoard
 
-(Download the project to see how to use the menu)
+<p align="center"><img title="Storyboard example" src="https://raw.githubusercontent.com/Bragegs/DropDownMenu/master/ToggleMenuStoryboard.gif"/></p>
+
 
 ## License
 

@@ -28,17 +28,33 @@
                                     <action selector="icons8pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7b5-gc-Uck"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXh-JC-lej" customClass="ToggleMenu" customModule="MenuToggle" customModuleProvider="target">
+                                <rect key="frame" x="280" y="280" width="40" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1oM-JD-T44"/>
+                                    <constraint firstAttribute="width" constant="40" id="kJl-qP-Kgh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="ToggleImage" value="Toggle"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="kGo-wl-Z6R" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="1kX-QP-XP0"/>
                             <constraint firstAttribute="trailing" secondItem="kGo-wl-Z6R" secondAttribute="trailing" id="9eb-Cg-pM7"/>
+                            <constraint firstItem="lXh-JC-lej" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MRZ-pf-SQJ"/>
                             <constraint firstItem="kGo-wl-Z6R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PKK-gF-IMz"/>
                             <constraint firstAttribute="trailing" secondItem="yE1-oL-Xw3" secondAttribute="trailing" constant="40" id="REa-C9-bvg"/>
+                            <constraint firstItem="lXh-JC-lej" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Y6f-Bm-VVl"/>
                             <constraint firstItem="kGo-wl-Z6R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-17" id="acH-AA-cVA"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yE1-oL-Xw3" secondAttribute="bottom" constant="40" id="zh0-oz-0qT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="theToggleMenu" destination="lXh-JC-lej" id="Rth-7l-I43"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,5 +63,6 @@
     </scenes>
     <resources>
         <image name="IMG_2810" width="1136" height="640"/>
+        <image name="Toggle" width="20" height="20"/>
     </resources>
 </document>

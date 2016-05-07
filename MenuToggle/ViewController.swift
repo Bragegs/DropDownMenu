@@ -9,22 +9,36 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    // Connect the menu from the storyboard. The view must have constraints for height and width where height-constraint = width-constraint.
+    @IBOutlet weak var theToggleMenu: ToggleMenu!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Adding menubuttons to XIB toggleMenu
+       var buttons = [UIButton]()
+        for _ in 0..<3{
+            let button = UIButton()
+            button.setImage(UIImage(named: "Toggle"), forState: .Normal)
+            buttons.append(button)
+            button.addTarget(self, action: #selector(darkMenuButtonPressed), forControlEvents: .TouchUpInside)
+        }
+        self.theToggleMenu.menuButtons = buttons
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         addLightToggleView()
         addDarkToggleView()
         addExtraLightToggleView()
+    }
+    
+    //You can add the toggleMenu programatically
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
     }
     
     func addDarkToggleView(){
@@ -41,6 +55,7 @@ class ViewController: UIViewController {
         self.view.addSubview(toggleView)
     }
     
+    // Custom effect style on init:
     func addLightToggleView(){
         var buttons = [UIButton]()
         for _ in 0..<6{
@@ -50,11 +65,11 @@ class ViewController: UIViewController {
             button.addTarget(self, action: #selector(lightMenuButtonPressed), forControlEvents: .TouchUpInside)
         }
         
-        let toggleView = ToggleMenu(frame: CGRectMake((self.view.bounds.width*0.66)-92,40, 46, 46), toggleImage: UIImage(named: "Toggle")!, menuButtons: buttons)
+        let toggleView = ToggleMenu(frame: CGRectMake((self.view.bounds.width*0.66)-92,40, 46, 46), toggleImage: UIImage(named: "Toggle")!, menuButtons: buttons,withEffectStyle:UIBlurEffectStyle.Light)
         self.view.addSubview(toggleView)
-        toggleView.setBlurViewEffectStyle(UIBlurEffectStyle.Light,afterDelay: 0.0)
     }
     
+    // Custom effect style change with delay:
     func addExtraLightToggleView(){
         var buttons = [UIButton]()
         for _ in 0..<3{
@@ -66,7 +81,7 @@ class ViewController: UIViewController {
         
         let toggleView3 = ToggleMenu(frame: CGRectMake((self.view.bounds.width*0.99)-92,40, 46, 46), toggleImage: UIImage(named: "Menu-100")!, menuButtons: buttons)
         self.view.addSubview(toggleView3)
-        toggleView3.setBlurViewEffectStyle(UIBlurEffectStyle.ExtraLight,afterDelay: 0.0)
+        toggleView3.setBlurViewEffectStyle(UIBlurEffectStyle.ExtraLight,afterDelay: 0.5)
     }
     
     func darkMenuButtonPressed(){

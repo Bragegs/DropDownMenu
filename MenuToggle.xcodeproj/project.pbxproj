@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		21448E661CDCFE0500677345 /* ToggleMenu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 21448E651CDCFE0500677345 /* ToggleMenu.gif */; };
+		217871E71CDDE28B00EC389F /* ToggleMenuStoryboard.gif in Resources */ = {isa = PBXBuildFile; fileRef = 217871E61CDDE28B00EC389F /* ToggleMenuStoryboard.gif */; };
 		21BC50691CDCC40800E85CB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC50681CDCC40800E85CB0 /* AppDelegate.swift */; };
 		21BC506B1CDCC40800E85CB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC506A1CDCC40800E85CB0 /* ViewController.swift */; };
 		21BC506E1CDCC40800E85CB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BC506C1CDCC40800E85CB0 /* Main.storyboard */; };
 		21BC50701CDCC40800E85CB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21BC506F1CDCC40800E85CB0 /* Assets.xcassets */; };
 		21BC50731CDCC40800E85CB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BC50711CDCC40800E85CB0 /* LaunchScreen.storyboard */; };
-		21BC50971CDCC7B700E85CB0 /* MenuToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC50961CDCC7B700E85CB0 /* MenuToggle.swift */; };
+		21BC50971CDCC7B700E85CB0 /* ToggleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC50961CDCC7B700E85CB0 /* ToggleMenu.swift */; };
 		21BC50991CDCCBFD00E85CB0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 21BC50981CDCCBFD00E85CB0 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		21448E651CDCFE0500677345 /* ToggleMenu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ToggleMenu.gif; sourceTree = "<group>"; };
+		217871E61CDDE28B00EC389F /* ToggleMenuStoryboard.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ToggleMenuStoryboard.gif; sourceTree = "<group>"; };
 		21BC50651CDCC40800E85CB0 /* MenuToggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuToggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21BC50681CDCC40800E85CB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21BC506A1CDCC40800E85CB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +28,7 @@
 		21BC506F1CDCC40800E85CB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21BC50721CDCC40800E85CB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21BC50741CDCC40800E85CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21BC50961CDCC7B700E85CB0 /* MenuToggle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuToggle.swift; sourceTree = "<group>"; };
+		21BC50961CDCC7B700E85CB0 /* ToggleMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleMenu.swift; sourceTree = "<group>"; };
 		21BC50981CDCCBFD00E85CB0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				21448E651CDCFE0500677345 /* ToggleMenu.gif */,
+				217871E61CDDE28B00EC389F /* ToggleMenuStoryboard.gif */,
 				21BC50981CDCCBFD00E85CB0 /* README.md */,
 				21BC50671CDCC40800E85CB0 /* MenuToggle */,
 				21BC50661CDCC40800E85CB0 /* Products */,
@@ -65,7 +68,7 @@
 				21BC50681CDCC40800E85CB0 /* AppDelegate.swift */,
 				21BC506A1CDCC40800E85CB0 /* ViewController.swift */,
 				21BC506C1CDCC40800E85CB0 /* Main.storyboard */,
-				21BC50961CDCC7B700E85CB0 /* MenuToggle.swift */,
+				21BC50961CDCC7B700E85CB0 /* ToggleMenu.swift */,
 				21BC506F1CDCC40800E85CB0 /* Assets.xcassets */,
 				21BC50711CDCC40800E85CB0 /* LaunchScreen.storyboard */,
 				21BC50741CDCC40800E85CB0 /* Info.plist */,
@@ -134,6 +137,7 @@
 				21BC50731CDCC40800E85CB0 /* LaunchScreen.storyboard in Resources */,
 				21BC50701CDCC40800E85CB0 /* Assets.xcassets in Resources */,
 				21448E661CDCFE0500677345 /* ToggleMenu.gif in Resources */,
+				217871E71CDDE28B00EC389F /* ToggleMenuStoryboard.gif in Resources */,
 				21BC506E1CDCC40800E85CB0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,7 +152,7 @@
 				21BC506B1CDCC40800E85CB0 /* ViewController.swift in Sources */,
 				21BC50691CDCC40800E85CB0 /* AppDelegate.swift in Sources */,
 				21BC50991CDCCBFD00E85CB0 /* README.md in Sources */,
-				21BC50971CDCC7B700E85CB0 /* MenuToggle.swift in Sources */,
+				21BC50971CDCC7B700E85CB0 /* ToggleMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
