@@ -55,6 +55,28 @@ class ToggleMenu: UIView {
             self.toggleButton.setImage(ToggleImage, forState: .Normal)
         }
     }
+    /**
+     You can set the UIEffectStyle of choise in Storyboard/XIB. You have to set the strings "Dark" for dark, "Light" for light" or "ExtraLight" for extra light effect style.
+     */
+    @IBInspectable var effectStyle: String? {
+        didSet {
+            if effectStyle != nil{
+                switch effectStyle!{
+                case "Dark":
+                    self.blurEffectStyle = UIBlurEffectStyle.Dark
+                    break;
+                case "Light":
+                    self.blurEffectStyle = UIBlurEffectStyle.Light
+                    break;
+                case "ExtraLight":
+                    self.blurEffectStyle = UIBlurEffectStyle.ExtraLight
+                    break;
+                default:
+                    break;
+                }
+            }
+        }
+    }
     
     init(frame: CGRect, toggleImage: UIImage, menuButtons: [UIButton], withEffectStyle:UIBlurEffectStyle) {
         self.menuButtons = menuButtons
